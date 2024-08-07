@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMaps - Java</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <button id="menu-toggle">☰</button>
+        <h1>OMaps Live Stream</h1>
+    </header>
+    <aside id="sidebar">
+        <h2>Live Feed - Omaps</h2>
+        <nav id="menu">
+            <a href="index.html">Stream</a>
+            <a href="static.html">Static</a> 
+             
+            <a class="active" href="java.html">Java</a>
+            <a href="javascript.html">Javascript</a>
+            <a href="videolan.html">Video Player</a>
+            <a target="_blank" onClick="window.open(this.href, '_blank','width=400,height=400'); return false;" href="control.htm">Control</a>
+        </nav>
+        <h3>Version info:</h3>
+        <p>v1 (June 10, 2024)</p>
+    </aside>
+    <main id="content">
+        <h1>Java</h1>
+        <h2>Display the Stream with Java</h2>
+        <section>
+            <h3>Hints</h3>
+            <p>This example shows the stream by using a Java applet. It works with any browser with Java support. To see a simple example click <a href="java_simple.html">here</a>. <a href="java_control.html">Another example</a> shows how to place controls around the Java applet.</p>
+            <h3>Source Snippet</h3>
+            <pre>&lt;applet code="com.charliemouse.cambozola.Viewer" archive="cambozola.jar" width="512" height="384"&gt;
+&lt;param name="url" value="./?action=stream"/&gt;
+&lt;/applet&gt;</pre>
+            <applet code="com.charliemouse.cambozola.Viewer" archive="cambozola.jar" width="512" height="384">
+                <param name="url" value="./?action=stream"/>
+                <param name="watermarks" value="favicon.png|left,top"/>
+            </applet>
+            <h3>About the Java Applet</h3>
+            <p>The used Java applet is called <a href="http://www.charliemouse.com/code/cambozola/"><i>cambozola</i></a>.</p>
+            <iframe src="LICENSE.txt" name="LICENSE" width="100%" height="200" scrolling="yes"></iframe>
+        </section>
+        <footer>
+            <p>&copy; OMaps</p>
+        </footer>
+    </main>
+</body>
+</html>
